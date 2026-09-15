@@ -2,68 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bhargav Doddala - Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D Bhargav - Senior Software Engineer | ADAS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Profile Card -->
-  <section id="profile" class="profile-card">
-    <h1>Bhargav Doddala</h1>
-    <p>ADAS Software Engineer | 7 YOE | Bengaluru, India</p>
-    <p>
-      <a href="mailto:bhargavnaidu754@gmail.com">bhargavnaidu754@gmail.com</a> | 
-      <a href="tel:+918686349754">+91-8686349754</a> | 
-      <a href="https://www.linkedin.com/in/bhargav-doddala-4412449b/" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+  <main class="resume">
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Aptiv (Jan 2022 - Present)</h3>
+    <header class="profile-card" id="profile">
+      <h1>D Bhargav</h1>
+      <h2>Senior Software Engineer</h2>
+      <p class="tagline">ADAS Software Engineer | 7 Years 3 Months Experience | Bengaluru, India</p>
+      <div class="contact">
+        <a href="mailto:bhargavnaidu754@gmail.com">bhargavnaidu754@gmail.com</a>
+        <span>|</span>
+        <a href="tel:+918686349754">+91-8686349754</a>
+        <span>|</span>
+        <a href="https://www.linkedin.com/in/bhargav-doddala-4412449b/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </header>
+
+    <section id="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        ADAS Software Engineer with 7 years of experience in automotive software development,
+        specializing in ADAS camera perception, embedded systems, and automotive ECU integration.
+        Strong expertise in Embedded C/C++, Linux, RTOS, EyeQ6L, TI TDA4, and StradVision integration.
+        Proven experience in vision pipeline development, low-level driver integration, debugging,
+        unit testing, and static analysis. Hands-on experience delivering safety-critical software
+        following ISO 26262 and Agile SDLC practices.
+      </p>
+    </section>
+
+    <section id="certification">
+      <h2>Certification</h2>
       <ul>
-        <li>Developed ADAS camera perception software on EyeQ6L</li>
-        <li>Integrated StradVision stack with TI TDA4</li>
-        <li>Resolved 20+ critical defects using LDRA</li>
+        <li>Certified Embedded Engineer for Vector India pvt. ltd</li>
+        <li>Linux System Programming - A Programmer's/Practical Approach</li>
+        <li>Lean Software Development</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>IFV600 / IFV700:</strong> Integrated EyeQ software, optimized CPU latency</li>
-      <li><strong>Body Control Modules:</strong> Developed low-level drivers, executed UDS testing</li>
-    </ul>
-  </section>
+    <section id="experience">
+      <h2>Work Experience</h2>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <p>B.Tech in Electronics & Communication Engineering, Sree Rama Engineering College (2017) — 72.3%</p>
-  </section>
+      <div class="job">
+        <div class="job-header">
+          <h3>Senior Software Engineer - Aptiv</h3>
+          <span>Jan 2022 - Present</span>
+        </div>
+        <ul>
+          <li>Developed and integrated ADAS camera perception software on EyeQ6L platform using Embedded C/C++ and Linux.</li>
+          <li>Integrated StradVision perception stack with TI TDA4, reducing camera pipeline latency.</li>
+          <li>Implemented camera fault detection and image capture mechanisms, improving system reliability.</li>
+          <li>Integrated Aptiv Vision Interface (AVI) for IFV600, ensuring compliance with automotive standards.</li>
+          <li>Integrated Mobileye EyeQ software modules and debugged EyeQIF communication with Aurix TC397.</li>
+          <li>Resolved 20+ critical defects including data-flow and static memory issues using LDRA and Promira SPI Analyzer.</li>
+          <li>Performed unit testing, smoke testing, and static analysis, achieving zero critical failures.</li>
+          <li>Managed SPI communication between EyeQ6L and Aurix, improving system responsiveness.</li>
+        </ul>
+      </div>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <p><strong>Languages:</strong> C, C++, Embedded C, Python</p>
-    <p><strong>Platforms:</strong> Linux, RTOS, EyeQ6L, TI TDA4</p>
-    <p><strong>Protocols:</strong> CAN, SPI, I2C, UART</p>
-  </section>
+      <div class="job">
+        <div class="job-header">
+          <h3>Software Engineer - SASVA Automotive (Formerly SmartAuto Software Solutions)</h3>
+          <span>Feb 2019 - Jan 2022</span>
+        </div>
+        <ul>
+          <li>Developed AUTOSAR-compliant ECU software for Ford, GM, and KIA platforms.</li>
+          <li>Implemented RGTM, PSD, PEM, and PFCM modules meeting functional and safety requirements.</li>
+          <li>Performed UDS testing, Boot Loader testing, and HIL validation following ISO 26262.</li>
+          <li>Identified and fixed memory, numerical, and data-flow defects using LDRA.</li>
+          <li>Developed MISRA C-compliant embedded firmware for Renesas microcontrollers.</li>
+          <li>Conducted static analysis, unit testing, code reviews, and code coverage analysis.</li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- Recognitions -->
-  <section id="recognitions">
-    <h2>Recognitions</h2>
-    <ul>
-      <li>Top Performer at SmartAuto Software Solutions</li>
-      <li>Aptiv "One Team" award for ADAS Vision Platform</li>
-    </ul>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
 
-  <footer>
-    <p>Languages: English | Telugu | Kannada</p>
-  </footer>
+      <div class="project">
+        <h3>IFV600 / IFV700 - ADAS Vision Platform</h3>
+        <ul>
+          <li>Integrated EyeQ software with IFV600 Gen6 and IFV700 Gen7 platforms.</li>
+          <li>Developed Aptiv Vision Interface (AVI) for camera data flow.</li>
+          <li>Integrated StradVision stack and optimized CPU latency.</li>
+          <li>Debugged EyeQ flashing, initialization, and message mapping issues.</li>
+          <li>Implemented camera fault detection and image capture verification.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <h3>Body Control Modules (PFCM, PEM, RGTM, PSD)</h3>
+        <ul>
+          <li>Developed low-level drivers (PWM, Timers).</li>
+          <li>Executed UDS, Boot Loader, and Regression testing.</li>
+          <li>Performed unit testing and static analysis and code coverage using LDRA.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>B.Tech/B.E. | Electronics and Communication Engineering (ECE)</h3>
+        <p>Sree Rama Engineering College, Chittoor</p>
+        <p><strong>Marks:</strong> 72.3% &nbsp; | &nbsp; <strong>Year:</strong> 2017</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+
+      <div class="skill-group">
+        <h3>Programming Languages</h3>
+        <p>C, C++, Embedded C, Python</p>
+      </div>
+
+      <div class="skill-group">
+        <h3>Operating Systems &amp; Platforms</h3>
+        <p>Linux, RTOS, EyeQ6L, TI TDA4, Aurix TriCore (TC397xx), Renesas F1L</p>
+      </div>
+
+      <div class="skill-group">
+        <h3>ADAS &amp; Vision</h3>
+        <p>ADAS Camera Systems, Computer Vision, Camera Calibration, StradVision, EyeQ Integration, Vision Pipelines, OpenVX, TIOVX</p>
+      </div>
+
+      <div class="skill-group">
+        <h3>Automotive Protocols and Drivers</h3>
+        <p>CAN, SPI, I2C, UART, PWM, Timers</p>
+      </div>
+
+      <div class="skill-group">
+        <h3>Testing &amp; Quality</h3>
+        <p>Unit Testing, Static Analysis (LDRA), HIL Testing, UDS Testing, Boot Loader Testing, MISRA C, ISO 26262</p>
+      </div>
+    </section>
+
+    <section id="tools">
+      <h2>Tools</h2>
+      <p>
+        GDB, Git, Promira SPI Analyzer, Vision Apps, TB Vision, LDRA, Lauterbach Trace32,
+        CANoe, Linux perf, CMake, JIRA, Polarion, Confluence
+      </p>
+    </section>
+
+    <section id="recognitions">
+      <h2>Recognitions</h2>
+      <ul>
+        <li>Awarded "Top Performer" at SmartAuto Software Solutions for high-quality embedded software delivery and defect-free releases.</li>
+        <li>Recognized with Aptiv "One Team" award for contributing to the successful development of the first ADAS vision platform under aggressive timelines.</li>
+        <li>Recognized for driving the IFV700 Pursuit Demo success through key contributions in ADAS vision platform development and integration.</li>
+        <li>Recognized for contributions towards Gen7 DV.</li>
+      </ul>
+    </section>
+
+    <section id="additional">
+      <h2>Additional Information</h2>
+      <p><strong>Languages:</strong> English, Telugu, Kannada</p>
+    </section>
+
+    <footer>
+      <p>© 2026 D Bhargav | Senior Software Engineer | ADAS &amp; Automotive Software</p>
+    </footer>
+
+  </main>
 </body>
 </html>
