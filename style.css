@@ -1,30 +1,19 @@
+/* Global Styles */
+html {
+  scroll-behavior: smooth; /* enables smooth scrolling */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
 nav {
   background: #1abc9c;
   padding: 10px 0;
   position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #2c3e50;
-}
+  top:
