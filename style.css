@@ -1,47 +1,448 @@
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+/* =========================================================
+   D. Bhargav Naidu - Automotive Software Engineer Portfolio
+   ========================================================= */
+
+* {
   margin: 0;
-  background: #f0f2f5;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Profile Card */
-.profile-card {
-  text-align: center;
-  background: #fff;
-  padding: 50px 20px;
-  margin: 30px auto;
-  max-width: 900px;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* =========================
+   Main Resume Container
+   ========================= */
+
+.resume {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #ffffff;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
-.profile-card h1 { margin: 0; font-size: 2.5em; color: #2c3e50; }
-.profile-card p { margin: 10px 0; font-size: 1.1em; }
-.profile-card a { color: #1abc9c; text-decoration: none; }
-.profile-card a:hover { text-decoration: underline; }
 
-/* Sections */
+/* =========================
+   Header / Profile
+   ========================= */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 45px 55px;
+  background: #111827;
+  color: #ffffff;
+}
+
+.profile-photo {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.profile-info h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #d1d5db;
+  margin-bottom: 15px;
+}
+
+.profile-info p {
+  max-width: 800px;
+  font-size: 15px;
+  color: #d1d5db;
+}
+
+/* =========================
+   Contact / Links
+   ========================= */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+  margin-top: 18px;
+}
+
+.contact a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.contact a:hover {
+  color: #60a5fa;
+}
+
+/* =========================
+   Germany / Availability Tag
+   ========================= */
+
+.availability {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #1e3a5f;
+  color: #bfdbfe;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================
+   Main Content
+   ========================= */
+
+.content {
+  padding: 45px 55px;
+}
+
 section {
-  padding: 30px;
-  margin: 25px auto;
-  max-width: 1000px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-section h2 {
-  color: #2c3e50;
-  border-bottom: 3px solid #1abc9c;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 42px;
 }
 
-/* Footer */
+section:last-child {
+  margin-bottom: 0;
+}
+
+section h2 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 65px;
+  height: 2px;
+  background: #2563eb;
+}
+
+/* =========================
+   Professional Summary
+   ========================= */
+
+.summary {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+/* =========================
+   Skills
+   ========================= */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  padding: 7px 13px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.skill:hover {
+  background: #e0ecff;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+/* =========================
+   Experience
+   ========================= */
+
+.experience-item {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 3px solid #2563eb;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.experience-header h3 {
+  font-size: 18px;
+  color: #111827;
+}
+
+.company {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.date {
+  color: #6b7280;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.experience-item ul {
+  padding-left: 20px;
+}
+
+.experience-item li {
+  margin-bottom: 7px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+/* =========================
+   Projects
+   ========================= */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  padding: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project h3 {
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #111827;
+}
+
+.project p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* =========================
+   Education
+   ========================= */
+
+.education-item {
+  margin-bottom: 18px;
+}
+
+.education-item h3 {
+  font-size: 17px;
+  color: #111827;
+}
+
+.education-item p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
 footer {
   text-align: center;
-  padding: 20px;
-  background: #2c3e50;
-  color: #fff;
-  margin-top: 30px;
+  padding: 25px;
+  background: #f8fafc;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+
+.btn {
+  display: inline-block;
+  padding: 9px 17px;
+  margin-top: 15px;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   Responsive - Tablet
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .resume {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 25px;
+  }
+
+  .profile-photo {
+    width: 125px;
+    height: 125px;
+  }
+
+  .profile-info h1 {
+    font-size: 30px;
+  }
+
+  .profile-info h2 {
+    font-size: 17px;
+  }
+
+  .contact {
+    justify-content: center;
+  }
+
+  .content {
+    padding: 35px 25px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .date {
+    white-space: normal;
+  }
+}
+
+/* =========================
+   Responsive - Mobile
+   ========================= */
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .profile-header {
+    padding: 30px 18px;
+  }
+
+  .profile-info h1 {
+    font-size: 26px;
+  }
+
+  .profile-info h2 {
+    font-size: 15px;
+  }
+
+  .profile-info p {
+    font-size: 13px;
+  }
+
+  .content {
+    padding: 30px 18px;
+  }
+
+  section {
+    margin-bottom: 32px;
+  }
+
+  section h2 {
+    font-size: 19px;
+  }
+
+  .experience-item {
+    padding-left: 14px;
+  }
+
+  .skill {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+/* =========================
+   Print / PDF
+   ========================= */
+
+@media print {
+
+  body {
+    background: #ffffff;
+  }
+
+  .resume {
+    margin: 0;
+    max-width: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .profile-header {
+    background: #111827 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .project:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
