@@ -6,27 +6,6 @@ body {
   color: #333;
 }
 
-/* Navbar */
-nav {
-  background: #1abc9c;
-  padding: 12px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0; padding: 0;
-}
-nav ul li { margin: 0 20px; }
-nav ul li a {
-  color: #fff; text-decoration: none; font-weight: 600;
-  transition: color 0.3s ease;
-}
-nav ul li a:hover { color: #2c3e50; }
-
 /* Profile Card */
 .profile-card {
   text-align: center;
